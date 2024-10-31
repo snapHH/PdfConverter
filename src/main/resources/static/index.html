@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word to PDF Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Word to PDF Converter</h1>
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept=".docx" hidden />
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Drag & Drop your Word file here</p>
+            <span>or</span>
+            <button id="browseButton">Browse Files</button>
+        </div>
+        <div class="file-info" id="fileInfo"></div>
+        <button id="convertButton" class="convert-btn" disabled>Convert to PDF</button>
+        <div id="downloadLink" class="download-link"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
